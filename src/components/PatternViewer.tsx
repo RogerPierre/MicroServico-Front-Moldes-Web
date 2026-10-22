@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Measurements, RenderApiResponse } from '../types/pattern';
 
-const API_BASE_URL = (import.meta.env.VITE_API_URL || '/api').replace(/\/$/, '');
-const API_KEY = import.meta.env.VITE_API_KEY || 'moldes_sec_token_v1_2026';
+const API_BASE_URL = (import.meta.env.API_URL || import.meta.env.VITE_API_URL || '/api').replace(/\/$/, '');
+const API_KEY = import.meta.env.API_KEY || import.meta.env.VITE_API_KEY || 'moldes_sec_token_v1_2026';
 const API_URL = `${API_BASE_URL}/v1/render?export_format=all`;
 const DEBOUNCE_MS = 600;
 
