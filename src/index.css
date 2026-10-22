@@ -1,0 +1,42 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  color: #1a202c;
+}
+
+input[type='number'] {
+  padding: 6px 8px;
+  border: 1px solid #CBD5E0;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 120px;
+}
+
+input[type='number']:focus {
+  outline: none;
+  border-color: #2B6CB0;
+  box-shadow: 0 0 0 2px rgba(43, 108, 176, 0.2);
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4A5568;
+}
